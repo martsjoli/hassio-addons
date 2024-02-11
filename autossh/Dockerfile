@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 COPY rootfs /
 
 # Setup base
-RUN apk add --no-cache openssh vim curl autossh
+RUN apk add --no-cache moreutils openssh vim curl autossh
 
 # Build arguments
 ARG BUILD_ARCH
