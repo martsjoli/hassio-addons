@@ -89,7 +89,7 @@ if bashio::debug; then
     autossh_params+=(-v)
 fi
 
-autossh_params+=("${OTHER_SSH_OPTIONS}")
+autossh_params+=(${OTHER_SSH_OPTIONS})
 
 bashio::log.info "Autossh start!"
 bashio::log.debug "Executing autossh with params:"
